@@ -17,27 +17,32 @@ export class Carasoul extends Component {
                 {
                     src: image1,
                     altText: 'Slide 1',
-                    caption: 'Slide 1 Caption'
+                    caption: 'First slide label',
+                    description: 'Nulla vitae elit libero, a pharetra augue mollis interdum.'
                 },
                 {
                     src: image2,
                     altText: 'Slide 2',
-                    caption: 'Slide 2 Caption'
+                    caption: 'Second slide label',
+                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
                 },
                 {
                     src: image3,
                     altText: 'Slide 3',
-                    caption: 'Slide 3 Caption'
+                    caption: 'Third slide label',
+                    description: 'Praesent commodo cursus magna, vel scelerisque nisl consectetur.'
                 },
                 {
                     src: image4,
                     altText: 'Slide 4',
-                    caption : 'Slide 4 Caption'
+                    caption: 'Fourth slide label',
+                    description: 'Maecenas sed diam eget risus varius blandit sit amet non magna.'
                 },
                 {
                     src: image5,
-                    altText: 'slide 5',
-                    caption: 'Slide 5 Caption'
+                    altText: 'Slide 5',
+                    caption: 'Fifth slide label',
+                    description: 'Etiam porta sem malesuada magna mollis euismod.'
                 }
             ]
         };
@@ -67,8 +72,15 @@ export class Carasoul extends Component {
                     onExiting={() => this.setState({ animating: true })}
                     onExited={() => this.setState({ animating: false })}
                 >
-                    <img src={item.src} alt={item.altText} style={{ width: '100%', height : 'auto' }} />
-                    <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+                    <div className="position-relative">
+                        <img src={item.src} alt={item.altText} style={{ width: '100%', height: 'auto', transition: 'opacity 0.5s ease !important' }} />
+                        <div className="gradient-overlay top"></div>
+                        <div className="gradient-overlay bottom"></div>
+                        <div className="gradient-overlay left"></div>
+                        <div className = "carousel-text">
+                            <CarouselCaption captionText={item.description} captionHeader={item.caption} />
+                        </div>
+                    </div>
                 </CarouselItem>
             );
         });
@@ -78,6 +90,7 @@ export class Carasoul extends Component {
                 activeIndex={activeIndex}
                 next={this.next}
                 previous={this.previous}
+                ride="carousel" // Added for fade animation
             >
                 <CarouselIndicators items={items} activeIndex={activeIndex} onClickHandler={this.goToIndex} />
                 {slides}
@@ -87,4 +100,3 @@ export class Carasoul extends Component {
         );
     }
 }
-

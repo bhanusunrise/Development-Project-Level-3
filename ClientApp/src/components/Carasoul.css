@@ -1,0 +1,18 @@
+﻿/* Custom styles for carousel */
+.custom-carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-carousel-image {
+    width: 100%;
+    height: auto;
+}
+
+.custom-carousel-caption {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for caption */
+    color: white; /* Caption text color */
+    margin-bottom: 100px; /* Padding for caption */
+}
