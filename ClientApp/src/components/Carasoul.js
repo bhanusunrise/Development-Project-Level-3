@@ -16,36 +16,34 @@ export class Carasoul extends Component {
             items: [
                 {
                     src: image1,
-                    altText: 'Slide 1',
-                    caption: 'First slide label',
-                    description: 'Nulla vitae elit libero, a pharetra augue mollis interdum.'
+                    altText: 'Slide 1'
                 },
                 {
                     src: image2,
-                    altText: 'Slide 2',
-                    caption: 'Second slide label',
-                    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+                    altText: 'Slide 2'
                 },
                 {
                     src: image3,
-                    altText: 'Slide 3',
-                    caption: 'Third slide label',
-                    description: 'Praesent commodo cursus magna, vel scelerisque nisl consectetur.'
+                    altText: 'Slide 3'
                 },
                 {
                     src: image4,
-                    altText: 'Slide 4',
-                    caption: 'Fourth slide label',
-                    description: 'Maecenas sed diam eget risus varius blandit sit amet non magna.'
+                    altText: 'Slide 4'
                 },
                 {
                     src: image5,
-                    altText: 'Slide 5',
-                    caption: 'Fifth slide label',
-                    description: 'Etiam porta sem malesuada magna mollis euismod.'
+                    altText: 'Slide 5'
                 }
             ]
         };
+    }
+
+    componentDidMount() {
+        this.interval = setInterval(this.next, 5000); // Set interval for auto sliding every 5000 ms (5 seconds)
+    }
+
+    componentWillUnmount() {
+        clearInterval(this.interval); // Clear interval on component unmount to avoid memory leaks
     }
 
     next = () => {
@@ -77,16 +75,13 @@ export class Carasoul extends Component {
                         <div className="gradient-overlay top"></div>
                         <div className="gradient-overlay bottom"></div>
                         <div className="gradient-overlay left"></div>
-                        <div className = "carousel-text">
-                            <CarouselCaption captionText={item.description} captionHeader={item.caption} />
-                        </div>
                     </div>
                 </CarouselItem>
             );
         });
 
         return (
-            <Carousel
+            <Carousel fade
                 activeIndex={activeIndex}
                 next={this.next}
                 previous={this.previous}
@@ -100,3 +95,4 @@ export class Carasoul extends Component {
         );
     }
 }
+
