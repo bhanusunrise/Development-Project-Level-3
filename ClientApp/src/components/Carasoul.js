@@ -2,7 +2,11 @@
 import { Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCaption } from 'reactstrap';
 
 // Importing images
-import image1 from './images/Home/carasoul/image1.jpg';
+import image1 from './images/Home/carasoul/image1.webp';
+import image2 from './images/Home/carasoul/image2.webp';
+import image3 from './images/Home/carasoul/image3.webp';
+import image4 from './images/Home/carasoul/image4.webp';
+import image5 from './images/Home/carasoul/image5.webp';
 
 export class Carasoul extends Component {
     constructor(props) {
@@ -16,14 +20,24 @@ export class Carasoul extends Component {
                     caption: 'Slide 1 Caption'
                 },
                 {
-                    src: image1,
+                    src: image2,
                     altText: 'Slide 2',
                     caption: 'Slide 2 Caption'
                 },
                 {
-                    src: image1,
+                    src: image3,
                     altText: 'Slide 3',
                     caption: 'Slide 3 Caption'
+                },
+                {
+                    src: image4,
+                    altText: 'Slide 4',
+                    caption : 'Slide 4 Caption'
+                },
+                {
+                    src: image5,
+                    altText: 'slide 5',
+                    caption: 'Slide 5 Caption'
                 }
             ]
         };
