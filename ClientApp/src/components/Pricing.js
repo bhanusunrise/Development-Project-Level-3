@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
+import PriceList from './PriceList';
+
 export class Pricing extends Component {
   static displayName = Pricing.name;
 
   render() {
     return (
       <div> 
-        <h1>Pricing</h1>
+            <PriceList />
       </div>
     );
   }
