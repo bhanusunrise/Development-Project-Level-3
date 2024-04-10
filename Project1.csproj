@@ -26,6 +26,7 @@
 
   <ItemGroup>
     <Folder Include="ClientApp\src\components\images\Home\carasoul\" />
+    <Folder Include="ClientApp\src\components\images\Home\message\" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">
