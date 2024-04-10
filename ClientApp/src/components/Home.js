@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Carasoul } from './Carasoul';
-import ImageLeft from './ImageLeft';
+import ImageShaper from './ImageShaper';
 import image1 from './images/Home/carasoul/image1.webp';
 import image2 from './images/Home/carasoul/image2.webp';
 import image3 from './images/Home/carasoul/image3.webp';
@@ -21,11 +21,11 @@ export class Home extends Component {
 
         return (
             <div>
-                <Carasoul />
+                
                 <div className="container">
                     <div className="row details">
                         <div className="col-md-4">
-                            <ImageLeft imageUrl={image1} borderRadius={borderRadius[0]} />
+                            <ImageShaper imageUrl={image1} borderRadius={borderRadius[0]} />
                         </div>
                         <div className="col-md-8 d-flex align-items-center">
                             <SummeryDetails title={detailTopics[0]} description={detailContents[0]} />
@@ -36,12 +36,12 @@ export class Home extends Component {
                             <SummeryDetails title={detailTopics[1]} description={detailContents[1]} />
                         </div>
                         <div className="col-md-4">
-                            <ImageLeft imageUrl={image2} borderRadius={borderRadius[1]} />
+                            <ImageShaper imageUrl={image2} borderRadius={borderRadius[1]} />
                         </div>
                     </div>
                     <div className="row details">
                         <div className="col-md-4">
-                            <ImageLeft imageUrl={image3} borderRadius={borderRadius[2]} />
+                            <ImageShaper imageUrl={image3} borderRadius={borderRadius[2]} />
                         </div>
                         <div className="col-md-8 d-flex align-items-center">
                             <SummeryDetails title={detailTopics[2]} description={detailContents[2]} />
@@ -52,8 +52,13 @@ export class Home extends Component {
                             <SummeryDetails title={detailTopics[3]} description={detailContents[3]} />
                         </div>
                         <div className="col-md-4">
-                            <ImageLeft imageUrl={image4} borderRadius={borderRadius[3]} />
+                            <ImageShaper imageUrl={image4} borderRadius={borderRadius[3]} />
                         </div>
+                    </div>
+                </div>
+                <div className="container">
+                    <div className="row">
+
                     </div>
                 </div>
             </div>

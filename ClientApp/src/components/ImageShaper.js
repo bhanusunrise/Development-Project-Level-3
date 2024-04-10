@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Card, CardImg } from 'reactstrap';
 
-class ImageLeft extends Component {
+class ImageShaper extends Component {
     render() {
         const { imageUrl, borderRadius } = this.props;
 
@@ -18,6 +18,6 @@ class ImageLeft extends Component {
     }
 }
 
-export default ImageLeft;
+export default ImageShaper;
 
 
