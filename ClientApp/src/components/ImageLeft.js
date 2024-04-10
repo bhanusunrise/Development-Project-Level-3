@@ -1,13 +1,12 @@
-﻿import React, { Component } from 'react';
+import React, { Component } from 'react';
 import { Card, CardImg } from 'reactstrap';
 
 class ImageLeft extends Component {
     render() {
-        const { imageUrl } = this.props;
-        const borderRadius = '22% 59% 49% 21% / 46% 35% 50% 17%';
+        const { imageUrl, borderRadius } = this.props;
 
         return (
-            <Card>
+            <Card className="custom-card">
                 <CardImg
                     top
                     src={imageUrl}
