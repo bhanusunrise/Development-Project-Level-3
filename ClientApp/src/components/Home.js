@@ -5,7 +5,7 @@ import image2 from './images/Home/carasoul/image2.webp';
 import image3 from './images/Home/carasoul/image3.webp';
 import image4 from './images/Home/carasoul/image4.webp';
 import SummeryDetails from './SummeryDetails';
-import { Button } from 'reactstrap';
+import PriceList from './PriceList';
 
 const detailTopics = ["The Best Solution", "The Most Cost Effective Solution", "The Best Customer Care Service", "The Latest Technology"];
 const detailContents = ["Our solution is best fit for your business because we created this system only for Hardware Businesses. Unlike other ERP solutions, you won't get any confusion with unnecessary features.",
@@ -63,18 +63,20 @@ export class Home extends Component {
                                     <div className="col-md-1"></div>                                              
                                     <div className="col-md-10"><SummeryDetails title="About Us" description="We, Bhanu Sunrise Solutions is the best emerging young software development company in Sri Lanka. Apart from Ampanna.com we offer Web Hosting and Web Development Services too." /></div>
                                     <div className="col-md-1"></div>
-                                </div>
-                                <div className="row">
-                                    <Button
-                                        color="warning"
-                                        outline
-                                    >
-                                        warning
-                                    </Button>
-                                </div>
+                                </div>                          
                                 </div>
                         </div>
                     </div>               
+                </div>
+
+                <div className="container-fluid" id="pricing-menu">
+                    <div className="container">
+                        <div className="row">
+                            <div className="d-flex align-items-center text-center">
+                                    <PriceList />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         );

@@ -13,10 +13,6 @@ html {
   }
 }
 
-.box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-}
-
 .custom-card {
     border: none; 
     box-shadow: none; 
@@ -31,9 +27,41 @@ html {
     background: rgb(255,255,255);
     background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(186,236,246,1) 100%);
     padding-top:200px;
-    padding-bottom: 200px;
+    padding-bottom: 100px;
 }
 
 .h1-p-spacing {
     margin-bottom: 300px;
+}
+
+#pricing-menu {
+    background: rgb(186,236,246);
+    background: linear-gradient(180deg, rgba(186,236,246,1) 0%, rgba(246,186,218,1) 100%);
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+.package {
+    border-width: 4px !important;
+    border-radius: 10px;
+}
+
+#trial-version {
+    background-color: rgba(240, 229, 234, 0.3);
+}
+
+#gold-version {
+    background-color: rgba(255, 226, 0, 0.3);
+}
+
+#platinum-version {
+    background-color: rgba(19, 255, 0, 0.3);
+}
+
+.card-topic{
+    padding-top: 10px;
+    padding-bottom : 10px;
+    background-color : #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
