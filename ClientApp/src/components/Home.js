@@ -6,6 +6,7 @@ import image3 from './images/Home/carasoul/image3.webp';
 import image4 from './images/Home/carasoul/image4.webp';
 import SummeryDetails from './SummeryDetails';
 import PriceList from './PriceList';
+import ContactSection from './ContactSection';
 
 const detailTopics = ["The Best Solution", "The Most Cost Effective Solution", "The Best Customer Care Service", "The Latest Technology"];
 const detailContents = ["Our solution is best fit for your business because we created this system only for Hardware Businesses. Unlike other ERP solutions, you won't get any confusion with unnecessary features.",
@@ -20,8 +21,9 @@ export class Home extends Component {
         const borderRadius = ['22% 59% 25% 36% / 49% 35% 50% 51%', '52% 50% 75% 26% / 65% 44% 57% 37%', '71% 29% 75% 39% / 65% 62% 36% 37% ', '36% 64% 61% 39% / 45% 47% 54% 55% '];
 
         return (
-            <div>              
-                <div className="container">
+            <div>
+                <div className="container-fluid" id="welcome-section">  
+                <div className="container" id="intro">
                     <div className="row details">
                         <div className="col-md-4">
                             <ImageShaper imageUrl={image1} borderRadius={borderRadius[0]} />
@@ -55,6 +57,7 @@ export class Home extends Component {
                         </div>
                     </div>
                 </div>
+            </div>
                 <div className="container-fluid" id="about-menu">
                     <div className="container">
                         <div className="row">
@@ -68,12 +71,33 @@ export class Home extends Component {
                         </div>
                     </div>               
                 </div>
+                
 
                 <div className="container-fluid" id="pricing-menu">
                     <div className="container">
                         <div className="row">
                             <div className="d-flex align-items-center text-center">
                                     <PriceList />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="container-fluid" id="contact-menu">
+                    <div className="container">
+                        <div className="row">
+                            <div className="d-flex align-items-center text-center">
+                                <ContactSection />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="container-fluid" id="login-menu">
+                    <div className="container">
+                        <div className="row">
+                            <div className="d-flex align-items-center text-center">
+                                <ContactSection />
                             </div>
                         </div>
                     </div>

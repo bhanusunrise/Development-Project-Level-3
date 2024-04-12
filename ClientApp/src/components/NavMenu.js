@@ -10,6 +10,7 @@ export class NavMenu extends Component {
         super(props);
 
         this.toggleNavbar = this.toggleNavbar.bind(this);
+        this.scrollToSection = this.scrollToSection.bind(this); // New method for smooth scrolling
         this.state = {
             collapsed: true
         };
@@ -21,6 +22,16 @@ export class NavMenu extends Component {
         });
     }
 
+    scrollToSection(id) {
+        const element = document.getElementById(id);
+        if (element) {
+            element.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        }
+    }
+
     render() {
         return (
             <header>
@@ -30,16 +41,16 @@ export class NavMenu extends Component {
                     <Collapse className="d-sm-inline-flex flex-sm-row-reverse" isOpen={!this.state.collapsed} navbar>
                         <ul className="navbar-nav flex-grow">
                             <NavItem>
-                                <NavLink tag={Link} className="text-dark" to="/">Home</NavLink>
+                                <NavLink className="text-dark" onClick={() => this.scrollToSection('intro')}>Home</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink tag={Link} className="text-dark" to="/about">About</NavLink>
+                                <NavLink className="text-dark" onClick={() => this.scrollToSection('about-menu')}>About</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink tag={Link} className="text-dark" to="/pricing">Pricing</NavLink>
+                                <NavLink className="text-dark" onClick={() => this.scrollToSection('pricing-menu')}>Pricing</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink tag={Link} className="text-dark" to="/contact">Contact</NavLink>
+                                <NavLink className="text-dark" onClick={() => this.scrollToSection('contact-menu')}>Contact</NavLink>
                             </NavItem>
                             <NavItem>
                                 <NavLink tag={Link} className="text-dark" to="/login">Login</NavLink>
