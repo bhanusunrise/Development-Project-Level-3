@@ -73,40 +73,37 @@ const RegistrationContent = () => {
                 <TabPane tabId="login">
                     <FormGroup>
                         <Label for="email">Email</Label>
-                        <Input type="email" name="email" id="email" value={email} onChange={handleEmailChange} />
+                        <Input type="email" name="email" id="email" value={email} onChange={handleEmailChange} placeholder="someone@example.com"/>
                     </FormGroup>
                     <FormGroup>
                         <Label for="password">Password</Label>
-                        <Input type={showPassword ? "text" : "password"} name="password" id="password" value={password} onChange={handlePasswordChange} />
+                        <Input type={showPassword ? "text" : "password"} name="password" id="password" value={password} onChange={handlePasswordChange} placeholder = "********" />
                     </FormGroup>
                     <FormGroup>
-                        <Label for="forget-password"><a href="">Forget Password ?</a></Label>
+                        <Label for="forget-password"><a href="" placeholder="********">Forget Password ?</a></Label>
                     </FormGroup>
                     <Button color="secondary" onClick={handleClear}>Clear</Button>{' '}
-                    <Button color="primary" onClick={handleSignIn}>Sign In</Button>{' '}
+                    <Button color="warning" onClick={handleSignIn}>Sign In</Button>{' '}
                 </TabPane>
                 <TabPane tabId="register">
                     <FormGroup>
                         <Label for="name">Name</Label>
-                        <Input type="text" name="name" id="name" value={name} onChange={handleNameChange} />
+                        <Input type="text" name="name" id="name" value={name} onChange={handleNameChange} placeholder = "John Doe" />
                     </FormGroup>
                     <FormGroup>
                         <Label for="email">Email</Label>
-                        <Input type="email" name="email" id="email" value={email} onChange={handleEmailChange} />
+                        <Input type="email" name="email" id="email" value={email} onChange={handleEmailChange} placeholder = "someone@example.com" />
                     </FormGroup>
                     <FormGroup>
                         <Label for="password">Password</Label>
-                        <Input type={showPassword ? "text" : "password"} name="password" id="password" value={password} onChange={handlePasswordChange} />
+                        <Input type={showPassword ? "text" : "password"} name="password" id="password" value={password} onChange={handlePasswordChange} placeholder = "********" />
                     </FormGroup>
                     <FormGroup>
                         <Label for="retypePassword">Re-Type Password</Label>
-                        <Input type={showPassword ? "text" : "password"} name="retypePassword" id="retypePassword" value={retypePassword} onChange={handleRetypePasswordChange} />
-                    </FormGroup>
-                    <FormGroup>
-                        <Label for="forget-password"><a href="">Forget Password ?</a></Label>
+                        <Input type={showPassword ? "text" : "password"} name="retypePassword" id="retypePassword" value={retypePassword} onChange={handleRetypePasswordChange} placeholder = "********" />
                     </FormGroup>
                     <Button color="secondary" onClick={handleClear}>Clear</Button>{' '}
-                    <Button color="primary" onClick={handleSignUp}>Sign Up</Button>{' '}
+                    <Button color="warning" onClick={handleSignUp}>Sign Up</Button>{' '}
                 </TabPane>
             </TabContent>
         </div>
