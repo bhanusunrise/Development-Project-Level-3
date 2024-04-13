@@ -111,3 +111,11 @@ html {
     padding: 30px !important;
 }
 
+.reg-img{
+    background-image: url('images/Home/carasoul/image5.webp');
+    background-size: cover;
+    background-position:right;
+    opacity : 0.8;
+    border-top-left-radius : 10px;
+    border-bottom-left-radius : 10px;
+}
