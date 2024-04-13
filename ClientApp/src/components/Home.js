@@ -9,6 +9,7 @@ import SummeryDetails from './SummeryDetails';
 import PriceList from './PriceList';
 import ContactSection from './ContactSection';
 import RegistrationContent from './RegistrationContent';
+import Footer from './Footer';
 
 const detailTopics = ["The Best Solution", "The Most Cost Effective Solution", "The Best Customer Care Service", "The Latest Technology"];
 const detailContents = ["Our solution is best fit for your business because we created this system only for Hardware Businesses. Unlike other ERP solutions, you won't get any confusion with unnecessary features.",
@@ -109,7 +110,7 @@ export class Home extends Component {
                     </div>
                 </div>
                 <div className="container-fluid" id="footer">
-                    
+                    <Footer/>
                 </div>
             </div>
         );

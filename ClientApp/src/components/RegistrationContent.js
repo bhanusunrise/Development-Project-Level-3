@@ -79,6 +79,9 @@ const RegistrationContent = () => {
                         <Label for="password">Password</Label>
                         <Input type={showPassword ? "text" : "password"} name="password" id="password" value={password} onChange={handlePasswordChange} />
                     </FormGroup>
+                    <FormGroup>
+                        <Label for="forget-password"><a href="">Forget Password ?</a></Label>
+                    </FormGroup>
                     <Button color="secondary" onClick={handleClear}>Clear</Button>{' '}
                     <Button color="primary" onClick={handleSignIn}>Sign In</Button>{' '}
                 </TabPane>
@@ -98,6 +101,9 @@ const RegistrationContent = () => {
                     <FormGroup>
                         <Label for="retypePassword">Re-Type Password</Label>
                         <Input type={showPassword ? "text" : "password"} name="retypePassword" id="retypePassword" value={retypePassword} onChange={handleRetypePasswordChange} />
+                    </FormGroup>
+                    <FormGroup>
+                        <Label for="forget-password"><a href="">Forget Password ?</a></Label>
                     </FormGroup>
                     <Button color="secondary" onClick={handleClear}>Clear</Button>{' '}
                     <Button color="primary" onClick={handleSignUp}>Sign Up</Button>{' '}

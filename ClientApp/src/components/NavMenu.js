@@ -53,7 +53,7 @@ export class NavMenu extends Component {
                                 <NavLink className="text-dark" onClick={() => this.scrollToSection('contact-menu')}>Contact</NavLink>
                             </NavItem>
                             <NavItem>
-                                <NavLink tag={Link} className="text-dark" to="/login">Login</NavLink>
+                                <NavLink className="text-dark" onClick={() => this.scrollToSection('login-menu')}>Login</NavLink>
                             </NavItem>
                         </ul>
                     </Collapse>
