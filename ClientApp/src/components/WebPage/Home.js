@@ -98,13 +98,16 @@ export class Home extends Component {
 
                 <div className="container-fluid" id="login-menu">
                     <div className="container">
-                        <div className="row">                           
-                            <div className="col-md-6">
-                                    <ImageShaper imageUrl={image5} borderRadius={borderRadius[0]} />
-                                </div>
-                            <div className= "col-md-6 reg-bg">
+                        <div className="row">  
+                            <div className="col-md-2"></div>
+                            <div className="col-md-4 reg-img">
+                                
+                            </div>
+                            
+                            <div className= "col-md-4 reg-bg">
                                     <RegistrationContent />
-                                </div>
+                            </div>
+                            <div className="col-md-2"></div>
                             
                         </div>
                     </div>
