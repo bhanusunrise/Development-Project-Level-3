@@ -4,6 +4,11 @@
   word-break: break-all;
 }
 
+a:hover {
+
+    cursor : pointer;
+}
+
 html {
   font-size: 14px;
 }
@@ -13,6 +18,96 @@ html {
   }
 }
 
-.box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+.custom-card {
+    border: none;
+    box-shadow: none;
+    overflow: hidden;
+    background-color: transparent;
+    opacity: 0.8;
 }
+
+.details{
+    margin-top:100px;
+    margin-bottom: 100px;
+}
+
+#about-menu {
+    background: rgb(142,255,183);
+    background: linear-gradient(180deg, rgba(142,255,183,1) 0%, rgba(186,236,246,1) 100%);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.h1-p-spacing {
+    margin-bottom: 300px;
+}
+
+#pricing-menu {
+    background: rgb(186,236,246);
+    background: linear-gradient(180deg, rgba(186,236,246,1) 0%, rgba(246,186,218,1) 100%);
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+.package {
+    border-width: 0;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#trial-version {
+    background-color: rgba(240, 229, 234, 0.4);
+}
+
+#gold-version {
+    background-color: rgba(255, 226, 0, 0.15);
+}
+
+#platinum-version {
+    background-color: rgba(19, 255, 0, 0.15);
+}
+
+.card-topic{
+    padding-top: 10px;
+    padding-bottom : 10px;
+    background-color : #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#contact-menu {
+    background: rgb(246,186,218);
+    background: linear-gradient(180deg, rgba(246,186,218,1) 0%, rgba(251,255,142,1) 100%);
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+#welcome-section {
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(251,255,142,1) 0%, rgba(142,255,183,1) 100%);
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+.contact-type {
+    border-width: 4px !important;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.5);
+    padding: 20px;
+}
+
+#login-menu {
+    background: rgb(251,255,142);
+    background: linear-gradient(180deg, rgba(251,255,142,1) 0%, rgba(255,255,255,1) 100%);
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+.reg-bg {
+    border-width: 4px !important;
+    border-radius: 10px !important;
+    background-color: rgba(255,255,255, 0.7);
+    padding: 30px !important;
+}
+

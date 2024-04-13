@@ -12,3 +12,45 @@ code {
   background-color: #1b6ec2;
   border-color: #1861ac;
 }
+
+.gradient-overlay {
+    position: absolute;
+}
+
+.top {
+    top: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    width: 100%;
+    height: 60vh;
+}
+
+.bottom {
+    bottom: 0;
+    background: linear-gradient(to top, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    width: 100%;
+    height: 40vh;
+}
+
+.left {
+    left: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    height: 100%;
+    width: 20vh;
+}
+
+.right {
+    right: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    height: 100%;
+    width: 20vh;
+}
+
+.carousel-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+}
+
+
