@@ -4,6 +4,11 @@
   word-break: break-all;
 }
 
+a:hover {
+
+    cursor : pointer;
+}
+
 html {
   font-size: 14px;
 }
@@ -90,5 +95,19 @@ html {
     border-radius: 10px;
     background-color: rgba(255,255,255,0.5);
     padding: 20px;
+}
+
+#login-menu {
+    background: rgb(251,255,142);
+    background: linear-gradient(180deg, rgba(251,255,142,1) 0%, rgba(255,255,255,1) 100%);
+    padding-top: 100px;
+    padding-bottom: 200px;
+}
+
+.reg-bg {
+    border-width: 4px !important;
+    border-radius: 10px !important;
+    background-color: rgba(255,255,255, 0.7);
+    padding: 30px !important;
 }
 
